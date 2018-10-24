@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col">
+  
+        <form [formGroup]="SingUpForm" (ngSubmit)="onSignUp()">
+  
+          <div class="form">
+            <div class="form-item">
+              <input class="input" type="text" placeholder="Enter first name" formControlName="firstName">
+            </div>
+            <div class="form-item">
+              <input class="input" type="text" placeholder="Enter last name" formControlName="lastName">
+            </div>
+            <div class="form-item">
+                <input class="input" type="text" placeholder="Email" formControlName="email">
+            </div>
+            <div class="form-item">
+                <input class="input" type="text" placeholder="Password" formControlName="password">
+            </div>
+          </div>
+          <button class="submit-btn" type="submit" [disabled]="!SingUpForm.valid">Submit</button>
+          <!-- <a routerLink="/signup">Sign up here!</a> -->
+        </form>
+  
+      </div>
+    </div>
+  </div>

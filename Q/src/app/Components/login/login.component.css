@@ -1,0 +1,44 @@
+:host{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
+
+    /* background: url('../../../assets/images/loginbackground.jpg'); */
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    height: 100%;   
+}
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.col{
+    height: 100%;
+}
+.row{
+    height: 400px;
+    width: 300px;
+    margin-right: 10%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 33px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.form-item{
+    padding: 15px 15px;
+}

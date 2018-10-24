@@ -1,0 +1,102 @@
+.js{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
+
+}
+.header{
+    font-size: 40px;
+    padding: 8px 8px;
+}
+.btn-grp{
+    display: flex;
+    justify-content: space-between
+}
+.add-btn{
+    float: right;
+    margin-right: 10px;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    background: cyan;
+    color: black;
+    padding: 8px 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.definition{
+    padding: 28px 30px;
+    background: aliceblue;
+    border: 1px solid gray;
+    border-radius: 16px;
+    margin-left: 14%;
+    margin-right: 14%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.quest-ans-container{
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 14px;
+    padding: 10px 10px;
+
+}
+.quest-ans{
+    /* border-radius: 14px;
+    background: gray;
+    padding: 10px 10px */
+}
+
+.ques{
+    font-size: 24px;
+    cursor: pointer;
+    /* background: blue;
+    color: white; */
+}
+
+.ans{
+    /* background: lightblue;
+    color: black; */
+}
+
+.item{
+
+    padding: 10px 10px;
+    padding: 10px 10px;
+    background: light-blue;
+    background: lightblue;
+    border-radius: 14px;
+    border: 1px solid;
+    margin: 4px;
+}
+
+.post-btn{
+    /* float: left; */
+    margin-top: 10px;
+    border-radius: 4px;
+    height: 40px;
+    color: white;
+    background: cyan;
+    color: black;
+    padding: 8px 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.text{
+    width: 80%;
+    padding: 14px
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}

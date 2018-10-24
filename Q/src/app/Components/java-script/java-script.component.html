@@ -1,0 +1,43 @@
+<div class="js">
+  <div class="btn-grp">
+    <div class="header">
+      JavaScript
+    </div>
+    <button class="add-btn">Add Question</button>
+  </div>
+  <hr>
+  <div class="definition">
+    <span>
+      JavaScript (not to be confused with Java) is a high-level, dynamic, multi-paradigm and weakly-typed language used
+      for both client-side and server-side scripting. Its primary use is in rendering and performing manipulation of
+      web pages. Use this tag for questions regarding ECMAScript and its various dialects/implementations (excluding
+      ActionScript and Google-Apps-Script).
+    </span>
+  </div>
+  <hr>
+  <div class="quest-ans-container">
+
+    <div class="quest-ans">
+      <div class="item" (click)="toggle()">
+        <label class="ques">Question: What is JavaScript?</label>
+      </div>
+      <div class="item">
+        <label class="ans">Description: I want to learn JS.Please tell me how should I start learning JS.</label>
+      </div>
+    </div>
+    <div *ngIf="isClicked">
+      <h1>Answer</h1>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos rem nulla illum ex adipisci nihil
+        ipsum assumenda? Excepturi dignissimos ipsam quam aliquam veniam dolor magni et cumque impedit minima?</span>
+    </div>
+    <div class="post">
+      <textarea class="text" name="" id="" cols="30" rows="10" placeholder="Enter your answer here"></textarea>
+      <button class="post-btn">Post your answer</button>
+    </div>
+  </div>
+
+
+
+
+
+</div>

@@ -1,0 +1,42 @@
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: black;
+    display: flex;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-menu{
+    padding-right: 43px;
+}
+
+.header-menu-item{
+
+}
+
+li{
+    cursor: pointer;
+    user-select: none;
+    display: inline;
+    padding: 12px 10px;
+    /* background: cyan; */
+    /* margin: 4px; */
+    /* border-radius: 4px; */
+    /* border-right: 1px solid; */
+    color: cyan;
+}
+
+li:hover{
+    /* background-color: cyan; */
+    color: cyan;
+    /* border-top: 1px solid cyan; */
+    border-bottom: 1px solid cyan;
+    border-right: none;
+    border-left: none;
+
+}

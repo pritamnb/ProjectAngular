@@ -1,0 +1,57 @@
+
+// creat table
+
+app.get('/createposttable', (req, res) => {
+    let sql = 'CREATE TABLE posts(id int PRIMARY KEY AUTO_INCREMENT,title varchar(255),body varchar(255))';
+    db.query(sql, (err, result) => {
+        if (err) {
+            throw err;
+        }
+        console.log(result);
+        res.send('POST table created');
+    })
+})
+
+// Insert
+app.get('/addpost1', (req,res) => {
+    let post = {title: 'Post ',body:'This is post no 1'};
+    let sql = 'Insert into posts SET ?';
+    let query = db.query(sql, post, (err,result) => {
+        if(err) throw err;
+        console.log(result);
+        res.send('entry added');
+    
+    });
+});
+
+app.get('/addpost2', (req,res) => {
+    let post = {title: 'Post ',body:'This is post no 2'};
+    let sql = 'Insert into posts SET ?';
+    let query = db.query(sql, post, (err,result) => {
+        if(err) throw err;
+        console.log(result);
+        res.send('entry added');
+    
+    });
+});
+
+// Get
+app.get('/getpost', (req,res) => {
+    let sql = `select * from posts`;
+    let query = db.query(sql, (err,result) => {
+        if(err) throw err;
+        console.log(result);
+        res.send('All entries fetched');
+    
+    });
+});
+
+app.get('/getpost/:id', (req,res) => {
+    let sql = `select * from posts where id = ${req.params.id}`;
+    let query = db.query(sql, (err,result) => {
+        if(err) throw err;
+        console.log(result);
+        res.send(`Post fetched`);
+    
+    });
+});
