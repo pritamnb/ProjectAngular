@@ -2,13 +2,19 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background: black;
+    background: white;
+    border-bottom: 1px solid gray;
     display: flex;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: flex-end;
+}
+.header:hover{
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
 }
 
 .header-menu{
@@ -28,14 +34,15 @@ li{
     /* margin: 4px; */
     /* border-radius: 4px; */
     /* border-right: 1px solid; */
-    color: cyan;
+    color: gray;
+    opacity: 0.5;
 }
 
 li:hover{
     /* background-color: cyan; */
-    color: cyan;
+    color: black;
     /* border-top: 1px solid cyan; */
-    border-bottom: 1px solid cyan;
+    border-bottom: 1px solid gray;;
     border-right: none;
     border-left: none;
 

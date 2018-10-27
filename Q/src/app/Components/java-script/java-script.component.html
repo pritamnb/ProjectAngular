@@ -1,9 +1,10 @@
 <div class="js">
+  
   <div class="btn-grp">
     <div class="header">
       JavaScript
     </div>
-    <button class="add-btn">Add Question</button>
+    <button (click)="addQuestion()" class="add-btn">Add Question</button>
   </div>
   <hr>
   <div class="definition">
@@ -15,8 +16,9 @@
     </span>
   </div>
   <hr>
+  
+  <form [formGroup]="jsForm" (ngSubmit)="onPostAnswer()">
   <div class="quest-ans-container">
-
     <div class="quest-ans">
       <div class="item" (click)="toggle()">
         <label class="ques">Question: What is JavaScript?</label>
@@ -25,16 +27,31 @@
         <label class="ans">Description: I want to learn JS.Please tell me how should I start learning JS.</label>
       </div>
     </div>
+    <ng-container class="answer-posted" *ngIf="isAnswer">
+        <h3>
+            Answers posted: 
+          </h3>
+      <div class= "posted-answer" *ngFor="let item of data;let i=index">
+        {{i+1}}: {{item}}
+        <div>
+        <span>Posted on: {{today}}</span>
+
+        </div>
+      </div>  
+      </ng-container>
     <div *ngIf="isClicked">
       <h1>Answer</h1>
       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos rem nulla illum ex adipisci nihil
         ipsum assumenda? Excepturi dignissimos ipsam quam aliquam veniam dolor magni et cumque impedit minima?</span>
     </div>
     <div class="post">
-      <textarea class="text" name="" id="" cols="30" rows="10" placeholder="Enter your answer here"></textarea>
-      <button class="post-btn">Post your answer</button>
+      <textarea formControlName="answer" class="text" name="" id="" cols="30" rows="10" placeholder="Enter your answer here"></textarea>
+    </div>
+    <div class="btn-container">
+      <button type="submit" [disabled]="!jsForm.valid" class="post-btn">Post your answer</button>
     </div>
   </div>
+  </form>
 
 
 

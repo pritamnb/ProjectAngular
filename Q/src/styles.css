@@ -1,33 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 *{
+    
     user-select: none;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
 
 .input{
     /* font-size: 20px; */
-    padding: 10px 10px;
+    padding: 4px 10px;
     outline: none;
-    border: 1px solid;
+    border: 1px solid lightgrey;
     border-radius: 18px;
     margin: 4px 4px;
     background: transparent;
-    color: white;
+    color: black
 }::placeholder{
-    color:powderblue;
+    color:gray;
 }
 
 .submit-btn{
     border-radius: 16px;
-    background: powderblue;
+    background: gray;
+    color: white;
     cursor: pointer;
     user-select: none;
     border: none;
     padding: 10px 10px;
     margin-top: 12px;
     opacity: 0.6;
-    width: 100%;
-    
+    width: 50%;
+}
+.submit-btn:hover{
+    opacity: 1;
+    transition-delay: 0.2s;
 }

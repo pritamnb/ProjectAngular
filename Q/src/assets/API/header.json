@@ -1,0 +1,22 @@
+[
+    {
+        "label": "Home",
+        "link": "home"
+    },
+    {
+        "label": "About us",
+        "link": "about-us"
+    },
+    {
+        "label": "Contact us",
+        "link": "contact-us"
+    },
+    {
+        "label": "Login",
+        "link": "login"
+    },
+    {
+        "label": "Signup",
+        "link": "signup"
+    }
+]

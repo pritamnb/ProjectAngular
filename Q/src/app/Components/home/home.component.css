@@ -3,7 +3,17 @@
 
 }
 
-.home{
-    background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
 
+.home{
+    width: 1536px;
+    position: fixed;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #bdc3c7 , #2c3e50); */
+    /* background: url('../../../assets/images/loginbackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; */
 }

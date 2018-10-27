@@ -1,0 +1,53 @@
+<div class="js">
+  <div class="btn-grp">
+    <div class="header">
+      Python
+    </div>
+    <button class="add-btn">Add Question</button>
+  </div>
+  <hr>
+  <div class="definition">
+    <span>
+      Python is an interpreted, object-oriented programming language similar to PERL, that has gained popularity because of its clear syntax and readability. Python is said to be relatively easy to learn and portable, meaning its statements can be interpreted in a number of operating systems, including UNIX-based systems, Mac OS, MS-DOS, OS/2, and various versions of Microsoft Windows 98. Python was created by Guido van Rossum, a former resident of the Netherlands, whose favorite comedy group at the time was Monty Python's Flying Circus. The source code is freely available and open for modification and reuse. Python has a significant number of users.
+    </span>
+  </div>
+  <hr>
+  
+  <form [formGroup]="jsForm" (ngSubmit)="onPostAnswer()">
+  <div class="quest-ans-container">
+    <div class="quest-ans">
+      <div class="item" (click)="toggle()">
+        <label class="ques">Question: What is python?</label>
+      </div>
+      <div class="item">
+        <label class="ans">Description: I want to learn JS.Please tell me how should I start learning Python.</label>
+      </div>
+    </div>
+    <ng-container *ngIf="isAnswer">
+        <h1>
+            Your answer: 
+          </h1>
+      <div *ngFor="let item of data;let i=index">
+        {{i+1}}
+        <label>
+          Answer
+        </label>{{item}}
+      </div>  
+      </ng-container>
+    <div *ngIf="isClicked">
+      <h1>Answer</h1>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos rem nulla illum ex adipisci nihil
+        ipsum assumenda? Excepturi dignissimos ipsam quam aliquam veniam dolor magni et cumque impedit minima?</span>
+    </div>
+    <div class="post">
+      <textarea formControlName="answer" class="text" name="" id="" cols="30" rows="10" placeholder="Enter your answer here"></textarea>
+      <button type="submit" [disabled]="!jsForm.valid" class="post-btn">Post your answer</button>
+    </div>
+  </div>
+  </form>
+
+
+
+
+
+</div>

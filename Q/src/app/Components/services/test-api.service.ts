@@ -10,7 +10,11 @@ export class TestAPIService {
 
   createDb() {
     const abc = 'hey';
-    this.http.get('http://localhost:3000/addpost1');
+    // this.http.get('http://localhost:3000/addpost1');
+  }
+
+  getCommentValues() {
+    return this.http.get('http://localhost:3000/posts');
   }
 
 }

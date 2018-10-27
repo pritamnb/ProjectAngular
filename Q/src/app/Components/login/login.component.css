@@ -1,12 +1,14 @@
 :host{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
+    /* background-image: linear-gradient(to right, #bdc3c7 , #2c3e50); */
 
     /* background: url('../../../assets/images/loginbackground.jpg'); */
     background-size: 100% 100%;
     background-repeat:no-repeat;
     height: 100%;   
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
 }
 form{
     height: 100%;
@@ -17,13 +19,19 @@ form{
     justify-content: center;
 }
 .col{
+    border: 1px solid gray;
     height: 100%;
+    /* -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px -6px -6px black; */
+            box-shadow: 2px 6px 6px -6px black;
+            border-radius: 6px;
+            
 }
 .row{
-    height: 400px;
+    height: 280px;
     width: 300px;
     margin-right: 10%;
-    margin-top: 3%;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +49,8 @@ a{
 
 .form-item{
     padding: 15px 15px;
+}
+
+.title{
+    
 }

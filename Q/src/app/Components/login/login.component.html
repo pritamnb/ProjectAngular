@@ -1,42 +1,39 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <span (click)="toggle()">
-        goto signup
-      </span>
-      <form *ngIf="!isSignUp" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <h1>Login</h1>
-        <div id="login" class="form">
+     
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <span class="title">login</span>
+        <div class="form">
           <div class="form-item">
-            <input class="input" type="text" placeholder="Enter first name" formControlName="firstName">
+            <input class="input" type="text" placeholder="Enter first name" formControlName="firstNameLogin">
+          </div>
+          <div class="form-item">
+            <input class="input" type="text" placeholder="Enter last name" formControlName="passwordLogin">
+          </div>
+        </div>
+        <button class="submit-btn" type="submit" [disabled]="!loginForm.valid">Submit</button>
+        <!-- <a routerLink="/signup">Sign up here!</a> -->
+      </form>
+      <!-- Signup -->
+      <!-- <div *ngIf="isSignUp" [formGroup]="SignUpFrom" (ngSubmit)="onSignUp()">
+        <h1>Signup</h1>
+        <div class="form">
+          <div class="form-item">
+            <input class="input" type="text" placeholder="Enter first name" formControlName="firstNameSingUp">
           </div>
           <div class="form-item">
             <input class="input" type="text" placeholder="Enter last name" formControlName="lastName">
           </div>
-        </div>
-        <button class="submit-btn" type="submit" [disabled]="!loginForm.valid">Submit</button>
-        <a routerLink="/signup">Sign up here!</a>
-      </form>
-      <!-- Signup -->
-      <div *ngIf="isSignUp">
-        <h1>Signup</h1>
-        <div class="form">
           <div class="form-item">
-            <input class="input" type="text" placeholder="Enter first name">
+            <input class="input" type="text" placeholder="Email" formControlName="email">
           </div>
           <div class="form-item">
-            <input class="input" type="text" placeholder="Enter last name">
-          </div>
-          <div class="form-item">
-            <input class="input" type="text" placeholder="Email">
-          </div>
-          <div class="form-item">
-            <input class="input" type="text" placeholder="Password">
+            <input class="input" type="text" placeholder="Password" formControlName="passwordSignUp">
           </div>
         </div>
         <button class="submit-btn" type="submit">Submit</button>
-        <!-- <a routerLink="/signup">Sign up here!</a> -->
-      </div>
+      </div> -->
 
     </div>
   </div>

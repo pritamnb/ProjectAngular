@@ -12,6 +12,9 @@ import { TagsComponent } from './Components/tags/tags.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { JavaScriptComponent } from './Components/java-script/java-script.component';
+import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { ContactUsComponent } from './Components/contact-us/contact-us.component';
+import { PythonComponent } from './Components/python/python.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { JavaScriptComponent } from './Components/java-script/java-script.compon
     LoginComponent,
     SignupComponent,
     TagsComponent,
-    JavaScriptComponent
+    JavaScriptComponent,
+    AboutUsComponent,
+    ContactUsComponent,
+    PythonComponent
   ],
   imports: [
     BrowserModule,

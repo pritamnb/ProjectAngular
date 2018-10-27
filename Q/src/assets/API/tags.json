@@ -1,0 +1,42 @@
+[
+    {
+        "imagePath": "/src/assets/images/js.png",
+        "label": "Javascript",
+        "link": "javascript"
+    },
+    {
+        "imagePath": "/src/assets/images/python.png",
+        "label": "Python",
+        "link": "python"
+    },
+    {
+        "imagePath": "/src/assets/images/html.png",
+        "label": "HTML",
+        "link": "html"
+    },
+    {
+        "imagePath": "/src/assets/images/nodejs.png",
+        "label": "NodeJS",
+        "link": "nodejs"
+    },
+    {
+        "imagePath": "/src/assets/images/mysql.png",
+        "label": "MySql",
+        "link": "mysql"
+    },
+    {
+        "imagePath": "/src/assets/images/ionic.jpeg",
+        "label": "Ionic",
+        "link": "ionic"
+    },
+    {
+        "imagePath": "/src/assets/images/android.png",
+        "label": "Android",
+        "link": "android"
+    },
+    {
+        "imagePath": "/src/assets/images/java.jpg",
+        "label": "Java",
+        "link": "java"
+    }
+]

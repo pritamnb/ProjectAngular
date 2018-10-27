@@ -1,3 +1,7 @@
+:host{
+    -webkit-animation: fadeIn 2s;
+    animation: fadeIn 2s;
+}
 .signup{
     position: absolute;
     background: cadetblue;
@@ -6,7 +10,6 @@
 :host{
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, #bdc3c7 , #2c3e50);
 
     /* background: url('../../../assets/images/loginbackground.jpg'); */
     background-size: 100% 100%;
@@ -31,6 +34,10 @@ form{
 } */
 .col{
     height: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    box-shadow: 2px 6px 6px -6px black;
+    border-radius: 6px;
 }
 .row{
     height: 400px;
